@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Advanced Search</title>
+		<link rel="stylesheet" href="style.css">
+		<div class="top_right">
+            <a class="link" href="index.html">Google Search</a>
+            <a class="link" href="image.html">Google Image Search</a>
+        </div>
+	</head>
+	<body  class=section>
+		<div >
+			<h1 id="advanced_search_w">Advanced Search</h1>
+			<hr>
+		</div>
+		<div>
+			<h3 id="fpw">Find pages with...</h3>
+			<div>
+				<div class="each_line_adv">
+					<div>all these words:</div>
+					
+					<form action="https://www.google.com/search">
+						<input type="text" name="as_q">
+					</form>
+				</div>
+				<div class="each_line_adv">
+					<div>this exact word or phrase:</div>
+
+					<form action="https://www.google.com/search">
+						<input type="text" name="as_epq">
+				</div>
+				<div class="each_line_adv">
+					<div>any of these words:</div>
+						<input type="text" name="as_oq">
+				</div>
+				<div class="each_line_adv">
+					<div>none of these words:</div>
+						<input type="text" name="as_eq">
+				</div>
+				<div class="each_line_adv">
+					<div>number ranging from:</div>
+						<input id="number_box" type="text" name="as_nlo">
+						to
+						<input id="number_box" type="text" name="as_nhi">
+				</div>
+				<div>
+					<input type="submit" value="Advanced Search">
+				</div>
+				</form>
+
+			</div>
+		</div>
+
+	</body>
+</html>
