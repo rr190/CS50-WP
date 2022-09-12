@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+	{{ entry }}
+{% endblock %}
+{% block body %}
+	{{ file | safe}}
+	
+
+	<form  action="{% url 'edit' entry %}" method="GET">
+		{% csrf_token %}
+		<button type="submit" class="btn btn-default btn-sm">
+      <span class="glyphicon">&#x270f;</span>
+    	</button>
+	</form>
+	
+{% endblock %}
